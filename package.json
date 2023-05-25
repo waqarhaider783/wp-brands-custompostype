@@ -1,0 +1,24 @@
+{
+  "name": "brands-custom-post-type",
+  "version": "1.0.0",
+  "description": "This is a plugin that registers a Brands custom post type to a WordPress website that then integrates with ACF to populate a data entry form. This plugin also creates the templates needed to showcase the post type on the front end.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "node-sass sass/ -o ./ --output-style compressed -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/syed-mh/v8-brands-cpt-wp-plugin.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/syed-mh/v8-brands-cpt-wp-plugin/issues"
+  },
+  "homepage": "https://github.com/syed-mh/v8-brands-cpt-wp-plugin#readme",
+  "dependencies": {
+    "node-sass": "^5.0.0"
+  }
+}

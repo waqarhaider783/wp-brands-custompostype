@@ -1,0 +1,17 @@
+/**
+ * This file is responsible for
+ * importing files that will be
+ * compiled into a minified css
+ * file to be used on the front-
+ * end. Do not style elements
+ * directly in this file.
+ *
+ * @author Waqar Haider <waqarhaider783@yahoo.com>
+*/
+
+.single-brand {
+  @import "./variables/";
+  @import "./general/";
+  @import "./layouts/";
+  @import "./components/";
+}

@@ -1,0 +1,68 @@
+/**
+ * This file is responsible for styling
+ * the brand details component of the brand
+ * template defined by this plugin
+ *
+ * @author Waqar Haider <waqarhaider783@yahoo.com>
+ */
+
+.brand-details {
+  &__featured-images-container {
+    margin: $unit * 2 $unit * (-2);
+    font-size: 0;
+  }
+  &__featured-image {
+    &--full,
+    &--half,
+    &--quarter {
+      display: inline-block;
+      padding: 0 $unit * 2;
+      box-sizing: border-box;
+      img {
+        width: 100%;
+        height: $unit * 32;
+        object-fit: cover;
+        display: block;
+        background-color: $color-primary;
+      }
+    }
+    &--full {
+      width: 100%;
+    }
+    &--half {
+      width: 50%;
+    }
+    &--quarter {
+      width: 25%;
+    }
+  }
+}
+@media only screen and (max-width: 768px) {
+  .brand-details {
+    &__featured-images-container {
+      margin: $unit * 2 $unit * (-0.5);
+    }
+    &__featured-image {
+      &--full,
+      &--half,
+      &--quarter {
+        padding: 0 $unit * 0.5;
+      }
+      &--half {
+        width: 100%;
+      }
+      &--quarter {
+        width: 50%;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 575px) {
+  .brand-details {
+    &__featured-image {
+      &--quarter {
+        width: 100%;
+      }
+    }
+  }
+}

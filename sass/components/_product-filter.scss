@@ -1,0 +1,51 @@
+/**
+ * This file is responsible for styling
+ * the product filter component of the brand
+ * template defined by this plugin
+ *
+ * @author Waqar Haider <waqarhaider783@yahoo.com>
+ */
+
+.product-filter {
+  background-color: $color-primary;
+  padding: 0 $unit * 3;
+  margin-bottom: $unit * 2;
+  &__inner {
+    margin: 0 $unit * (-2.5);
+  }
+  &__list {
+    margin: 0;
+    padding: 0;
+  }
+  &__list-item {
+    list-style: none;
+    display: inline-block;
+    padding: 0;
+    a {
+      display: block;
+      position: relative;
+      font-size: $unit * 1.6;
+      padding: $unit * 2.5;
+      text-decoration: none;
+      color: $color-bg--light;
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 25%;
+        width: 0;
+        height: $unit * 0.4;
+        border-radius: $unit;
+        background-color: $color-dark;
+        transition: width 200ms ease-in-out;
+      }
+      &.active,
+      &:hover,
+      &:focus {
+        &::after {
+          width: 50%;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,45 @@
+/**
+ * This file is responsible for styling
+ * the products component of the brand
+ * template defined by this plugin
+ *
+ * @author Waqar Haider <waqarhaider783@yahoo.com>
+ */
+
+.products {
+  margin-bottom: $unit * 7;
+  &__inner {
+    font-size: 16px;
+    .woocommerce {
+      ul.products {
+        li.product {
+          h2.woocommerce-loop-product__title {
+            max-height: unset;
+          }
+        }
+      }
+    }
+  }
+}
+// &__add-to-cart {
+//   border: $color-primary $unit * 0.2 solid;
+//   padding: 0;
+//   transition: color 200ms ease-in-out, background-color 200ms ease-in-out;
+//   &:not(:hover) {
+//     background-color: $color-primary;
+//     color: $color-accent;
+//   }
+//   &:hover {
+//     background-color: transparent;
+//     color: $color-primary;
+//   }
+//   a {
+//     padding: $unit $unit * 2;
+//     text-transform: uppercase;
+//     font-size: $unit * 1.4;
+//     font-weight: 700;
+//     display: block;
+//     color: inherit;
+//     text-decoration: none;
+//   }
+// }

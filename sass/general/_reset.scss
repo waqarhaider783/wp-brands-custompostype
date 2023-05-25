@@ -1,0 +1,12 @@
+/**
+ * This file is responsible for resetting
+ * general WP styles applied to the brand
+ * template defined by this plugin.
+ *
+ * @author Waqar Haider <waqarhaider783@yahoo.com>
+ */
+
+.site-main {
+  background-color: $color-bg--dark;
+  padding: 2rem 0;
+}

@@ -1,0 +1,81 @@
+/**
+ * This file is responsible for styling
+ * the page opener component of the brand
+ * template defined by this plugin
+ *
+ * @author Waqar Haider <waqarhaider783@yahoo.com>
+ */
+
+.brand {
+  position: relative;
+  margin-bottom: $unit * 2;
+  border: $unit * 0.1 solid $color-primary;
+  overflow: hidden;
+  display: flex;
+  place-items: center;
+  padding: $unit * 4 $unit * 3.5;
+  background-color: $color-bg--light;
+  &__logo-container,
+  &__introduction-container {
+    padding: 0 $unit * 3.5;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+  }
+  &__logo-container {
+    width: 35%;
+  }
+  &__title {
+    font-size: $unit * 1.8;
+    letter-spacing: 0.1em;
+    line-height: 1em;
+    font-weight: 500;
+  }
+  &__logo,
+  &__background-accent {
+    width: 100%;
+  }
+  &__logo {
+    object-fit: contain;
+    object-position: left center;
+    max-height: 8rem;
+    margin-top: $unit * 3;
+  }
+  &__introduction-container {
+    width: 65%;
+    p {
+      font-size: $unit * 1.6;
+      margin: $unit 0;
+    }
+  }
+  &__background-accent-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30%;
+    height: 100%;
+    padding: 0 $unit * 2;
+    z-index: 0;
+    opacity: 0.1;
+  }
+  &__background-accent {
+    max-height: 100%;
+    object-fit: cover;
+    object-position: center center;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .brand {
+    flex-direction: column;
+    &__logo-container {
+      width: 100%;
+      margin-bottom: $unit * 3;
+    }
+    &__logo {
+      object-position: center;
+    }
+    &__introduction-container {
+      width: 100%;
+    }
+  }
+}
